@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import styles from "./Navbar.module.css";
+import { Link } from "react-router-dom";
+import Container from "../Container/Container.jsx";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,38 +11,41 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`${styles.navbar} ${styles.whiteNavbar}`}>
-      <button 
-        className={styles.burgerButton} 
-        onClick={toggleMenu}
-        aria-label={isOpen ? "Закрыть меню" : "Открыть меню"}
-        aria-expanded={isOpen}
-      >
-        <div className={`${styles.burgerLine} ${isOpen ? styles.line1Open : ""}`}></div>
-        <div className={`${styles.burgerLine} ${isOpen ? styles.line2Open : ""}`}></div>
-        <div className={`${styles.burgerLine} ${isOpen ? styles.line3Open : ""}`}></div>
-      </button>
+    <div className={styles.whiteNavbar}>
+      <Container>
+      <nav className={`${styles.navbar}`}>
+        <Link to="/">
+        <img src="/img/logo.png" className={styles.logo} />
+        </Link>
+        <button 
+          className={styles.burgerButton} 
+          onClick={toggleMenu}
+          aria-label={isOpen ? "Закрыть меню" : "Открыть меню"}
+          aria-expanded={isOpen}
+        >
+          <div className={`${styles.burgerLine} ${isOpen ? styles.line1Open : ""}`}></div>
+          <div className={`${styles.burgerLine} ${isOpen ? styles.line2Open : ""}`}></div>
+          <div className={`${styles.burgerLine} ${isOpen ? styles.line3Open : ""}`}></div>
+        </button>
 
-      <div className={`${styles.navMenu} ${isOpen ? styles.open : ""}`}>
-        <ul>
-          <li>
-            <a href="/" onClick={() => setIsOpen(false)}>Главная</a>
-          </li>
-          <li>
-            <a href="/about" onClick={() => setIsOpen(false)}>Книги</a>
-          </li>
-          <li>
-            <a href="/about" onClick={() => setIsOpen(false)}>Рабочая тетрадь</a>
-          </li>
-          <li>
-            <a href="/services" onClick={() => setIsOpen(false)}>Наставничество и учениство</a>
-          </li>
-          <li>
-            <a href="/contact" onClick={() => setIsOpen(false)}>Оценка команды</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+        <div className={`${styles.navMenu} ${isOpen ? styles.open : ""}`}>
+          <ul>
+            <li>
+              <Link to="/" onClick={() => setIsOpen(false)}>Главная</Link>
+            </li>
+            <li>
+              <Link to="/books" onClick={() => setIsOpen(false)}>Книги</Link>
+            </li>
+            <li>
+              <Link to="/disciple" onClick={() => setIsOpen(false)}>Наставничество и ученичество</Link>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      </Container>
+    </div>
+
+
   );
 };
 

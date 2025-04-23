@@ -1,0 +1,26 @@
+.cartNav {
+  width: 65%;
+  margin: 70px auto;
+  display: grid;
+  gap: 40px 20px;
+  grid-template-columns: calc(50% - 10px) calc(50% - 10px);
+}
+
+@media (max-width: 1199px) {
+  .cartNav {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .cartNav {
+    grid-template-columns: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .cartNav {
+    width: 100%;
+    gap: 20px;
+  }
+}
