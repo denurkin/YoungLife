@@ -91,3 +91,14 @@
 .logo {
   height: 55px;
 }
+
+.fixed {
+  position: fixed;
+  right: 20px;
+}
+
+@media (min-width: 768px) {
+  .fixed {
+    right: 40px;
+  }
+}

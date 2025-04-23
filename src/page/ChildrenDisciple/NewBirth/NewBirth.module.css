@@ -1,0 +1,137 @@
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.mainTitle {
+  color: #2c3e50;
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 700;
+  border-bottom: 2px solid #eaecef;
+  padding-bottom: 15px;
+}
+
+.leadText {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #2c3e50;
+  margin-bottom: 25px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.highlightBlock {
+  background-color: #f0f7ff;
+  border-left: 4px solid #4a89dc;
+  padding: 20px;
+  margin: 25px 0;
+  border-radius: 0 8px 8px 0;
+}
+
+.highlightText {
+  margin: 0;
+  font-style: italic;
+  color: #2c3e50;
+  line-height: 1.7;
+}
+
+.text {
+  margin-bottom: 20px;
+  line-height: 1.7;
+  color: #34495e;
+}
+
+.subTitle {
+  color: #2c3e50;
+  font-size: 1.4rem;
+  margin: 30px 0 20px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.featuresList {
+  list-style: none;
+  padding: 0;
+  margin: 30px 0;
+}
+
+.featureItem {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  background-color: #f8fafc;
+  padding: 15px;
+  border-radius: 8px;
+  border-left: 3px solid #4a89dc;
+}
+
+.featureIcon {
+  color: #4a89dc;
+  font-weight: bold;
+  margin-right: 15px;
+  font-size: 1.2rem;
+}
+
+.featureContent {
+  flex: 1;
+}
+
+.featureContent strong {
+  color: #2c3e50;
+}
+
+.conclusionBlock {
+  background-color: #e8f4f8;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 30px 0;
+}
+
+.conclusionText {
+  margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #2c3e50;
+  font-weight: 500;
+}
+
+.discussionSection {
+  background-color: #f5f9fc;
+  padding: 25px;
+  border-radius: 8px;
+  margin-top: 40px;
+  border: 1px solid #e1e8ed;
+}
+
+.discussionTitle {
+  color: #2980b9;
+  font-size: 1.4rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.discussionList {
+  padding-left: 20px;
+}
+
+.discussionItem {
+  margin-bottom: 15px;
+  padding-left: 25px;
+  position: relative;
+  line-height: 1.6;
+  color: #34495e;
+}
+
+.discussionItem::before {
+  content: "•";
+  color: #3498db;
+  font-size: 1.5rem;
+  position: absolute;
+  left: 5px;
+  top: -3px;
+}

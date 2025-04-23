@@ -1,0 +1,131 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+.section {
+  margin-bottom: 40px;
+}
+
+.discipleshipSection {
+  margin-bottom: 50px;
+  padding-bottom: 30px;
+  border-bottom: 2px solid #eaecef;
+}
+
+.mentorshipSection {
+  margin-top: 40px;
+}
+
+.sectionTitle {
+  color: #2c3e50;
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.subtitle {
+  color: #3498db;
+  font-size: 1.3rem;
+  margin: 25px 0 15px;
+  font-weight: 600;
+}
+
+.featuresList {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.featureItem {
+  margin-bottom: 15px;
+  padding: 12px 15px;
+  background-color: #f8fafc;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  border-left: 3px solid #3498db;
+}
+
+.featureIcon {
+  margin-right: 15px;
+  font-size: 1.3rem;
+}
+
+.valueCard {
+  background-color: #f0f7ff;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border-left: 4px solid #4a89dc;
+}
+
+.valueHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.valueIcon {
+  font-size: 1.5rem;
+  margin-right: 15px;
+}
+
+.valueTitle {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #2c3e50;
+}
+
+.valueText {
+  margin: 0;
+  line-height: 1.7;
+  color: #34495e;
+}
+
+.valueText em {
+  font-style: italic;
+  color: #7f8c8d;
+  font-size: 0.9rem;
+}
+
+.valueGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.gridItem {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  border-top: 3px solid #4a89dc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.identichostImg {
+  margin-top: 50px;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .valueGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .sectionTitle {
+    font-size: 1.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.2rem;
+  }
+}

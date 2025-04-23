@@ -18,7 +18,7 @@ const Navbar = () => {
         <img src="/img/logo.png" className={styles.logo} />
         </Link>
         <button 
-          className={styles.burgerButton} 
+          className={`${styles.burgerButton} ${isOpen ? styles.fixed : ""}`}
           onClick={toggleMenu}
           aria-label={isOpen ? "Закрыть меню" : "Открыть меню"}
           aria-expanded={isOpen}

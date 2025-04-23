@@ -1,0 +1,207 @@
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.mainTitle {
+  color: #2c3e50;
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.leadText {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #34495e;
+  margin-bottom: 25px;
+}
+
+.definitionBlock {
+  background-color: #f0f7ff;
+  border-left: 4px solid #4a89dc;
+  padding: 15px;
+  margin: 20px 0;
+  border-radius: 0 8px 8px 0;
+}
+
+.definitionText {
+  margin: 0;
+  font-style: italic;
+}
+
+.subTitle {
+  color: #2c3e50;
+  font-size: 1.4rem;
+  margin: 30px 0 20px;
+  font-weight: 600;
+}
+
+.differenceGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin: 30px 0;
+}
+
+.differenceCard {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-top: 4px solid #4a89dc;
+}
+
+.differenceTitle {
+  color: #2c3e50;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.differenceText {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.coreDefinitions {
+  list-style: none;
+  padding: 0;
+  margin: 30px 0;
+}
+
+.coreDefinition {
+  margin-bottom: 15px;
+  padding: 15px;
+  background-color: #f8fafc;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.definitionIcon {
+  font-size: 1.5rem;
+  margin-right: 15px;
+}
+
+.expandedDefinitions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin: 30px 0;
+}
+
+.expandedDefinition {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.expandedTitle {
+  color: #2c3e50;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.expandedText {
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.expandedList {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.expandedList li {
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.expandedList li:before {
+  content: "•";
+  color: #4a89dc;
+  font-weight: bold;
+  position: absolute;
+  left: -15px;
+}
+
+.keyTruth {
+  background-color: #fff8e6;
+  border-left: 4px solid #f1c40f;
+  padding: 20px;
+  border-radius: 0 8px 8px 0;
+  margin: 30px 0;
+}
+
+.keyText {
+  margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.discussionSection {
+  background-color: #f5f9fc;
+  padding: 25px;
+  border-radius: 8px;
+  margin: 40px 0;
+  border: 1px solid #e1e8ed;
+}
+
+.discussionTitle {
+  color: #2980b9;
+  font-size: 1.4rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.discussionList {
+  padding-left: 20px;
+}
+
+.discussionItem {
+  margin-bottom: 15px;
+  padding-left: 25px;
+  position: relative;
+  line-height: 1.6;
+}
+
+.discussionItem::before {
+  content: "•";
+  color: #3498db;
+  font-size: 1.5rem;
+  position: absolute;
+  left: 5px;
+  top: -3px;
+}
+
+.scripturesSection {
+  margin-top: 40px;
+}
+
+.scripturesTitle {
+  color: #2c3e50;
+  font-size: 1.4rem;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.scripture {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  border-left: 3px solid #bdc3c7;
+}
+
+.scriptureText {
+  margin: 0;
+  line-height: 1.7;
+}

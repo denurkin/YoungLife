@@ -1,0 +1,133 @@
+.container {
+  margin: 50px auto;
+}
+
+.mainTitle {
+  color: #2c3e50;
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.leadText {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #2c3e50;
+  margin-bottom: 25px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.reasonsTitle {
+  color: #3498db;
+  font-size: 1.4rem;
+  text-align: center;
+  margin: 30px 0 20px;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 10px;
+}
+
+.reasonsList {
+  list-style-type: none;
+  padding: 0;
+  counter-reset: reason-counter;
+}
+
+.reasonItem {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #f8fafc;
+  border-radius: 8px;
+  border-left: 4px solid #3498db;
+  position: relative;
+  counter-increment: reason-counter;
+}
+
+.reasonItem::before {
+  content: counter(reason-counter);
+  position: absolute;
+  left: -15px;
+  top: -15px;
+  background-color: #3498db;
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.reasonItem strong {
+  color: #2c3e50;
+  font-size: 1.1rem;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.reasonItem p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.conclusion {
+  background-color: #e8f4f8;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 30px 0;
+  border-left: 3px solid #2980b9;
+}
+
+.conclusion .text {
+  font-style: italic;
+  color: #34495e;
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.subTitle {
+  color: #2c3e50;
+  font-size: 1.4rem;
+  text-align: center;
+  margin: 40px 0 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #eaecef;
+}
+
+.discussionSection {
+  background-color: #f5f9fc;
+  padding: 25px;
+  border-radius: 8px;
+  margin-top: 40px;
+  border: 1px solid #e1e8ed;
+}
+
+.discussionTitle {
+  color: #2980b9;
+  font-size: 1.4rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.discussionList {
+  padding-left: 20px;
+}
+
+.discussionItem {
+  margin-bottom: 15px;
+  padding-left: 25px;
+  position: relative;
+  line-height: 1.6;
+}
+
+.discussionItem::before {
+  content: "•";
+  color: #3498db;
+  font-size: 1.5rem;
+  position: absolute;
+  left: 5px;
+  top: -3px;
+}
