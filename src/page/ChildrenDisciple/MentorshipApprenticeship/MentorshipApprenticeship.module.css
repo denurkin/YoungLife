@@ -205,3 +205,18 @@
   margin: 0;
   line-height: 1.7;
 }
+
+@media (max-width: 576px) {
+  .differenceGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .expandedDefinitions {
+    grid-template-columns: 1fr;
+  }
+
+  .coreDefinition {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
