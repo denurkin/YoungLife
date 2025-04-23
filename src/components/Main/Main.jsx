@@ -11,7 +11,9 @@ const Main = ({img, title, description}) => {
               <h1 className={styles.title}>{title}</h1>
               <p className={styles.titleDescription}>{description}</p>
             </div>
-            <img src={img} className={styles.mainImg}/>
+            <div className={styles.mainImgContainer}>
+              <img src={img} className={styles.mainImg}/>
+            </div>
           </div>
         </Container>
       </main>
