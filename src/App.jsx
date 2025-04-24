@@ -12,16 +12,17 @@ import AnatomyOfMentorship from "./page/ChildrenDisciple/AnatomyOfMentorship/Ana
 import TypesOfMentorship from "./page/ChildrenDisciple/TypesOfMentorship/TypesOfMentorship.jsx";
 import DiscipleHome from "./page/ChildrenDisciple/DiscipleHome/DiscipleHome.jsx";
 import LivePoklonenie from "./page/ChildrenDisciple/LivePoklonenie/LivePoklonenie.jsx";
+import Layout from "./components/Layout/Layout.jsx";
 
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home/>,
+    element: <Layout><Home/></Layout>,
   },
   {
     path: "books",
-    element: <Books/>, // как в магазинах, товары книг
+    element: <Layout><Books/></Layout>, // как в магазинах, товары книг
   },
   // {
   //   path: "worksheet", 
@@ -29,43 +30,43 @@ const router = createBrowserRouter([
   // },
   {
     path: "disciple", // наставничество и учениство //https://discipleship.younglife.org/whys-and-how-tos/ BIG PICTURE STUFF
-    element: <Disciple/>,
+    element: <Layout><Disciple/></Layout>,
     children: [
       {
         index: true,
-        element: <DiscipleHome/>,
+        element: <Layout><DiscipleHome/></Layout>,
       },
       {
         path: "nastavnichestvo-i-uchenichestvo", 
-        element: <MentorshipApprenticeship/>,
+        element: <Layout><MentorshipApprenticeship/></Layout>,
       },
       {
         path: "identichnost", 
-        element: <IdentityInChrist/>,
+        element: <Layout><IdentityInChrist/></Layout>,
       },
       {
         path: "izuchenie-biblii", 
-        element: <BibleStudy/>,
+        element: <Layout><BibleStudy/></Layout>,
       },
       {
         path: "3-p-uchenichestva", 
-        element: <ThreePrinciplesOfDiscipleship/>,
+        element: <Layout><ThreePrinciplesOfDiscipleship/></Layout>,
       },
       {
         path: "novoe-rozhdenie", 
-        element: <NewBirth/>,
+        element: <Layout><NewBirth/></Layout>,
       },
       {
         path: "anatomiya-nastavnichestva", 
-        element: <AnatomyOfMentorship/>,
+        element: <Layout><AnatomyOfMentorship/></Layout>,
       },
       {
         path: "vidy-nastavnichestva", 
-        element: <TypesOfMentorship/>,
+        element: <Layout><TypesOfMentorship/></Layout>,
       },
       {
         path: "zhizn-i-poklonenie", 
-        element: <LivePoklonenie/>,
+        element: <Layout><LivePoklonenie/></Layout>,
       },
     ]
   },
@@ -118,7 +119,11 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-  return <RouterProvider router={router} />;
+  return (
+    <>
+      <RouterProvider router={router} />
+    </>
+  );
 }
 
 export default App;
