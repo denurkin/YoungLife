@@ -50,6 +50,14 @@
     gap: 20px;
     grid-template-columns: 100%;
   }
+
+  .title {
+    font-size: 2.4rem;
+  }
+
+  .titleDescription {
+    font-size: 1.8rem;
+  }
 }
 
 @media (max-width: 500px) {

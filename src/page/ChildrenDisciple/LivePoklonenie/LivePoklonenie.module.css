@@ -83,6 +83,7 @@
   position: relative;
   padding-left: 25px;
   font-weight: 500;
+  list-style: none;
 }
 
 .summaryItem:before {
@@ -113,14 +114,6 @@
 
 .discussionItem {
   margin-bottom: 15px;
-  padding-left: 10px;
   position: relative;
   font-weight: 500;
-}
-
-.discussionItem:before {
-  content: "—";
-  color: #2980b9;
-  position: absolute;
-  left: -10px;
 }

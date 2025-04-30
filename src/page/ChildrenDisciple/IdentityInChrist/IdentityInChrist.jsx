@@ -81,19 +81,19 @@ const IdentityInChrist = () => {
                   <ul className={styles.featuresList}>
                       <li className={styles.featureItem}>
                           <span className={styles.featureIcon}>👥</span>
-                          <strong>Отношения</strong> (мы вкладываем время и силы, чтобы по-настоящему узнать тех, кого наставляем)
+                          <strong className={styles.featureItemStong}>Отношения</strong> (мы вкладываем время и силы, чтобы по-настоящему узнать тех, кого наставляем)
                       </li>
                       <li className={styles.featureItem}>
                           <span className={styles.featureIcon}>🎯</span>
-                          <strong>Намерения</strong> (мы вкладываем в других осмысленно и с пониманием)
+                          <strong className={styles.featureItemStong}>Намерения</strong> (мы вкладываем в других осмысленно и с пониманием)
                       </li>
                       <li className={styles.featureItem}>
                           <span className={styles.featureIcon}>🤝</span>
-                          <strong>Верность</strong> (мы находимся рядом с теми, кого наставляем)
+                          <strong className={styles.featureItemStong}>Верность</strong> (мы находимся рядом с теми, кого наставляем)
                       </li>
                       <li className={styles.featureItem}>
                           <span className={styles.featureIcon}>🔄</span>
-                          <strong>Обновление</strong> (мы направляем других к преображенной жизни, где они становятся более похожими на Христа)
+                          <strong className={styles.featureItemStong}>Обновление</strong> (мы направляем других к преображенной жизни, где они становятся более похожими на Христа)
                       </li>
                   </ul>
                   

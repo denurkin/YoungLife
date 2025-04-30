@@ -53,6 +53,16 @@
   align-items: center;
   border-left: 3px solid #3498db;
   gap: 10px;
+
+  strong {
+    width: 350px;
+    flex-shrink: 0;
+  }
+}
+
+.featureItemStong {
+  width: 130px !important;
+  flex-shrink: 0;
 }
 
 .featureIcon {
@@ -135,6 +145,11 @@
 
     strong {
       text-align: center;
+      width: 100%;
+    }
+
+    .featureItemStong {
+      width: 100% !important;
     }
   }
 }

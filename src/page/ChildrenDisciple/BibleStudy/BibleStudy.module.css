@@ -118,16 +118,6 @@
 
 .discussionItem {
   margin-bottom: 15px;
-  padding-left: 25px;
   position: relative;
   line-height: 1.6;
-}
-
-.discussionItem::before {
-  content: "•";
-  color: #3498db;
-  font-size: 1.5rem;
-  position: absolute;
-  left: 5px;
-  top: -3px;
 }

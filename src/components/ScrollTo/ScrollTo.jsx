@@ -7,7 +7,6 @@ function ScrollTo() {
     useEffect(() => {
       window.scrollTo({
         top: 0,
-        behavior: "smooth" // Плавная прокрутка
       });
     }, [pathname]);
   

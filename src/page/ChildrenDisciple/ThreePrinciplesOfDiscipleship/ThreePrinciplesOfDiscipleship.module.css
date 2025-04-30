@@ -99,17 +99,6 @@
   position: relative;
 }
 
-.methodItem:before {
-  content: "";
-  position: absolute;
-  left: -10px;
-  top: 8px;
-  width: 6px;
-  height: 6px;
-  background-color: #4a89dc;
-  border-radius: 50%;
-}
-
 .methodItem strong {
   color: #2c3e50;
 }
@@ -168,16 +157,6 @@
 
 .discussionItem {
   margin-bottom: 15px;
-  padding-left: 25px;
   position: relative;
   line-height: 1.6;
-}
-
-.discussionItem::before {
-  content: "•";
-  color: #3498db;
-  font-size: 1.5rem;
-  position: absolute;
-  left: 5px;
-  top: -3px;
 }

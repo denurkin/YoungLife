@@ -81,6 +81,12 @@
   border-radius: 8px;
   display: flex;
   align-items: center;
+  gap: 10px;
+
+  strong {
+    width: 160px;
+    flex-shrink: 0;
+  }
 }
 
 .definitionIcon {
@@ -167,18 +173,8 @@
 
 .discussionItem {
   margin-bottom: 15px;
-  padding-left: 25px;
   position: relative;
   line-height: 1.6;
-}
-
-.discussionItem::before {
-  content: "•";
-  color: #3498db;
-  font-size: 1.5rem;
-  position: absolute;
-  left: 5px;
-  top: -3px;
 }
 
 .scripturesSection {
@@ -218,5 +214,10 @@
   .coreDefinition {
     flex-direction: column;
     gap: 10px;
+    text-align: center;
+
+    strong {
+      width: 100%;
+    }
   }
 }
